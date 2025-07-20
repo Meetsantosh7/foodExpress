@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: 'developed Santosh Kumar thakur',
 }
 
+//added nmew
+
 export default function RootLayout({
   children,
 }: {
