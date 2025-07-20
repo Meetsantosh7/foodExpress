@@ -1,0 +1,197 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic gradients for Mexican food -->
+    <radialGradient id="tortillaGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#F5E6A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B886;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="beefGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D2F0A;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="avocadoGrad" cx="30%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#9ACD32;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6B8E23;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="plateTexture">
+      <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <!-- Mexican restaurant background -->
+  <rect width="300" height="200" fill="#8B4513"/>
+  
+  <!-- Colorful Mexican wall tiles -->
+  <rect x="0" y="0" width="300" height="80" fill="#CD853F"/>
+  <g opacity="0.3">
+    <circle cx="30" cy="20" r="8" fill="#FF6347"/>
+    <circle cx="80" cy="30" r="6" fill="#32CD32"/>
+    <circle cx="130" cy="15" r="7" fill="#FFD700"/>
+    <circle cx="180" cy="25" r="5" fill="#FF69B4"/>
+    <circle cx="230" cy="20" r="8" fill="#00CED1"/>
+    <circle cx="270" cy="35" r="6" fill="#FF8C00"/>
+  </g>
+  
+  <!-- Wooden table surface -->
+  <rect x="0" y="80" width="300" height="120" fill="#8B7355"/>
+  <g opacity="0.2" filter="url(#plateTexture)">
+    <rect x="0" y="85" width="300" height="3" fill="#654321"/>
+    <rect x="0" y="95" width="300" height="2" fill="#654321"/>
+    <rect x="0" y="110" width="300" height="3" fill="#654321"/>
+    <rect x="0" y="125" width="300" height="2" fill="#654321"/>
+  </g>
+  
+  <!-- Large serving plate -->
+  <ellipse cx="150" cy="120" rx="100" ry="30" fill="#8B0000" opacity="0.3" filter="url(#shadow)"/>
+  <ellipse cx="150" cy="115" rx="95" ry="25" fill="#FF6347"/>
+  <ellipse cx="150" cy="115" rx="90" ry="22" fill="#FF4500"/>
+  
+  <!-- Taco 1 - Beef Taco -->
+  <g transform="translate(100, 95)">
+    <!-- Tortilla shell -->
+    <path d="M-20 15 Q-15 -5 0 0 Q15 -5 20 15 Q10 25 0 20 Q-10 25 -20 15" 
+          fill="url(#tortillaGrad)" filter="url(#shadow)"/>
+    <!-- Beef filling -->
+    <path d="M-15 12 Q-8 5 0 8 Q8 5 15 12 Q8 18 0 15 Q-8 18 -15 12" 
+          fill="url(#beefGrad)"/>
+    <!-- Lettuce -->
+    <path d="M-12 8 Q-6 2 0 5 Q6 2 12 8" fill="#32CD32" opacity="0.8"/>
+    <!-- Cheese -->
+    <path d="M-10 10 Q0 7 10 10" fill="#FFD700" opacity="0.9"/>
+    <!-- Tomato chunks -->
+    <circle cx="-6" cy="10" r="1.5" fill="#FF6347"/>
+    <circle cx="5" cy="12" r="1.5" fill="#FF6347"/>
+    <!-- Tortilla texture -->
+    <ellipse cx="-8" cy="2" rx="2" ry="1" fill="#E6D3A3" opacity="0.6"/>
+    <ellipse cx="6" cy="1" rx="2" ry="1" fill="#E6D3A3" opacity="0.6"/>
+  </g>
+  
+  <!-- Taco 2 - Chicken Taco -->
+  <g transform="translate(150, 95)">
+    <!-- Tortilla shell -->
+    <path d="M-20 15 Q-15 -5 0 0 Q15 -5 20 15 Q10 25 0 20 Q-10 25 -20 15" 
+          fill="url(#tortillaGrad)" filter="url(#shadow)"/>
+    <!-- Chicken filling -->
+    <path d="M-15 12 Q-8 5 0 8 Q8 5 15 12 Q8 18 0 15 Q-8 18 -15 12" 
+          fill="#DEB887"/>
+    <!-- Lettuce -->
+    <path d="M-12 8 Q-6 2 0 5 Q6 2 12 8" fill="#90EE90" opacity="0.8"/>
+    <!-- Sour cream -->
+    <path d="M-8 6 Q0 4 8 6" fill="#F5F5F5" opacity="0.9"/>
+    <!-- Salsa -->
+    <circle cx="-4" cy="9" r="1" fill="#DC143C"/>
+    <circle cx="6" cy="11" r="1" fill="#DC143C"/>
+    <!-- Cilantro -->
+    <path d="M-10 7 L-8 5 M-6 8 L-4 6 M2 7 L4 5 M6 8 L8 6" 
+          stroke="#228B22" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Taco 3 - Fish Taco -->
+  <g transform="translate(200, 95)">
+    <!-- Tortilla shell -->
+    <path d="M-20 15 Q-15 -5 0 0 Q15 -5 20 15 Q10 25 0 20 Q-10 25 -20 15" 
+          fill="url(#tortillaGrad)" filter="url(#shadow)"/>
+    <!-- Fish filling -->
+    <path d="M-15 12 Q-8 5 0 8 Q8 5 15 12 Q8 18 0 15 Q-8 18 -15 12" 
+          fill="#FFA500"/>
+    <!-- Cabbage slaw -->
+    <path d="M-12 8 Q-6 2 0 5 Q6 2 12 8" fill="#E6E6FA" opacity="0.8"/>
+    <!-- Avocado -->
+    <path d="M-8 10 Q0 8 8 10" fill="url(#avocadoGrad)" opacity="0.9"/>
+    <!-- Lime -->
+    <circle cx="0" cy="6" r="1" fill="#32CD32"/>
+    <!-- Fish grill marks -->
+    <path d="M-8 12 L8 12 M-8 10 L8 10" stroke="#D2691E" stroke-width="0.5" opacity="0.7"/>
+  </g>
+  
+  <!-- Guacamole bowl -->
+  <g transform="translate(80, 130)">
+    <ellipse rx="18" ry="12" fill="#654321" filter="url(#shadow)"/>
+    <ellipse rx="16" ry="10" fill="url(#avocadoGrad)"/>
+    <!-- Guacamole texture -->
+    <circle cx="-6" cy="-2" r="2" fill="#8FBC8F" opacity="0.7"/>
+    <circle cx="4" cy="1" r="1.5" fill="#8FBC8F" opacity="0.7"/>
+    <!-- Onion pieces -->
+    <circle cx="-3" cy="2" r="0.8" fill="#F5F5DC"/>
+    <circle cx="6" cy="-1" r="0.8" fill="#F5F5DC"/>
+  </g>
+  
+  <!-- Salsa bowl -->
+  <g transform="translate(220, 130)">
+    <ellipse rx="18" ry="12" fill="#654321" filter="url(#shadow)"/>
+    <ellipse rx="16" ry="10" fill="#DC143C"/>
+    <!-- Salsa chunks -->
+    <circle cx="-5" cy="-1" r="1.5" fill="#FF6347"/>
+    <circle cx="3" cy="2" r="1.2" fill="#FF6347"/>
+    <circle cx="-2" cy="1" r="1" fill="#32CD32"/> <!-- Pepper -->
+    <circle cx="6" cy="-2" r="0.8" fill="#F5F5DC"/> <!-- Onion -->
+  </g>
+  
+  <!-- Lime wedges -->
+  <g transform="translate(120, 140)">
+    <path d="M0 0 L8 0 A8 8 0 0 1 0 8 Z" fill="#32CD32" filter="url(#shadow)"/>
+    <path d="M1 1 L7 1 A6 6 0 0 1 1 7 Z" fill="#90EE90"/>
+    <circle cx="4" cy="4" r="0.5" fill="#228B22" opacity="0.6"/>
+  </g>
+  
+  <g transform="translate(180, 140)">
+    <path d="M0 0 L8 0 A8 8 0 0 1 0 8 Z" fill="#32CD32" filter="url(#shadow)"/>
+    <path d="M1 1 L7 1 A6 6 0 0 1 1 7 Z" fill="#90EE90"/>
+    <circle cx="4" cy="4" r="0.5" fill="#228B22" opacity="0.6"/>
+  </g>
+  
+  <!-- Tortilla chips scattered -->
+  <g transform="translate(60, 110)">
+    <path d="M0 0 L12 3 L6 12 Z" fill="#F5E6A3" filter="url(#shadow)"/>
+    <path d="M1 1 L10 3 L6 10 Z" fill="#E6D3A3"/>
+    <!-- Salt crystals -->
+    <circle cx="4" cy="4" r="0.3" fill="#F5F5F5" opacity="0.8"/>
+    <circle cx="7" cy="6" r="0.3" fill="#F5F5F5" opacity="0.8"/>
+  </g>
+  
+  <g transform="translate(240, 105)">
+    <path d="M0 0 L10 4 L4 14 Z" fill="#F5E6A3" filter="url(#shadow)"/>
+    <path d="M1 1 L9 4 L4 12 Z" fill="#E6D3A3"/>
+    <!-- Salt crystals -->
+    <circle cx="3" cy="5" r="0.3" fill="#F5F5F5" opacity="0.8"/>
+    <circle cx="6" cy="7" r="0.3" fill="#F5F5F5" opacity="0.8"/>
+  </g>
+  
+  <!-- Mexican beer bottle -->
+  <g transform="translate(270, 80)">
+    <rect x="0" y="0" width="8" height="25" rx="4" fill="#8B4513" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="8" height="20" rx="4" fill="#DEB887"/>
+    <!-- Label -->
+    <rect x="1" y="5" width="6" height="8" fill="#FF6347" opacity="0.8"/>
+    <!-- Bottle cap -->
+    <rect x="1" y="-2" width="6" height="3" fill="#FFD700"/>
+  </g>
+  
+  <!-- Steam from hot tacos -->
+  <g opacity="0.4">
+    <path d="M90 85 Q95 75 100 85 Q105 75 110 85" stroke="#F5F5F5" stroke-width="1" fill="none"/>
+    <path d="M140 85 Q145 75 150 85 Q155 75 160 85" stroke="#F5F5F5" stroke-width="1" fill="none"/>
+    <path d="M190 85 Q195 75 200 85 Q205 75 210 85" stroke="#F5F5F5" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Ambient Mexican restaurant lighting -->
+  <circle cx="50" cy="30" r="30" fill="#FF8C00" opacity="0.08"/>
+  <circle cx="250" cy="25" r="25" fill="#FF6347" opacity="0.08"/>
+  
+  <!-- Papel picado decorations -->
+  <g opacity="0.6">
+    <rect x="20" y="5" width="25" height="15" fill="#FF69B4" rx="2"/>
+    <rect x="50" y="5" width="25" height="15" fill="#32CD32" rx="2"/>
+    <rect x="80" y="5" width="25" height="15" fill="#FFD700" rx="2"/>
+    <rect x="110" y="5" width="25" height="15" fill="#FF6347" rx="2"/>
+    <rect x="140" y="5" width="25" height="15" fill="#00CED1" rx="2"/>
+    <rect x="170" y="5" width="25" height="15" fill="#FF8C00" rx="2"/>
+    <rect x="200" y="5" width="25" height="15" fill="#9370DB" rx="2"/>
+    <rect x="230" y="5" width="25" height="15" fill="#FF1493" rx="2"/>
+    <rect x="260" y="5" width="25" height="15" fill="#7FFF00" rx="2"/>
+  </g>
+</svg>

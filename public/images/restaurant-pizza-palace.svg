@@ -1,0 +1,83 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic gradients for pizza -->
+    <radialGradient id="crustGrad" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#E8C547;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="sauceGrad" cx="40%" cy="40%" r="80%">
+      <stop offset="0%" style="stop-color:#FF6347;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#B22222;stop-opacity:0.7" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="cheese" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Dark restaurant background -->
+  <rect width="300" height="200" fill="#2C1810"/>
+  
+  <!-- Wood table texture -->
+  <rect x="0" y="120" width="300" height="80" fill="#8B4513"/>
+  <rect x="0" y="130" width="300" height="2" fill="#654321" opacity="0.5"/>
+  <rect x="0" y="150" width="300" height="1" fill="#654321" opacity="0.3"/>
+  
+  <!-- Pizza plate -->
+  <ellipse cx="150" cy="100" rx="85" ry="25" fill="#F5F5F5" filter="url(#shadow)"/>
+  <ellipse cx="150" cy="95" rx="85" ry="20" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Pizza base with realistic crust -->
+  <circle cx="150" cy="95" r="65" fill="url(#crustGrad)" filter="url(#shadow)"/>
+  <circle cx="150" cy="95" r="62" fill="url(#sauceGrad)"/>
+  
+  <!-- Crust details -->
+  <circle cx="150" cy="95" r="65" fill="none" stroke="#A0522D" stroke-width="3" opacity="0.8"/>
+  <circle cx="150" cy="95" r="67" fill="none" stroke="#D2691E" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Mozzarella cheese with realistic melted look -->
+  <ellipse cx="130" cy="80" rx="12" ry="8" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  <ellipse cx="170" cy="85" rx="10" ry="6" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  <ellipse cx="150" cy="110" rx="14" ry="9" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  <ellipse cx="135" cy="105" rx="8" ry="5" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  <ellipse cx="165" cy="100" rx="11" ry="7" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  <ellipse cx="150" cy="75" rx="9" ry="6" fill="#FFF8DC" filter="url(#cheese)" opacity="0.9"/>
+  
+  <!-- Fresh basil leaves with realistic details -->
+  <ellipse cx="140" cy="85" rx="6" ry="3" fill="#228B22" transform="rotate(15 140 85)"/>
+  <ellipse cx="140" cy="85" rx="5" ry="2" fill="#32CD32" transform="rotate(15 140 85)"/>
+  <path d="M140 85 Q143 83 146 85" stroke="#006400" stroke-width="0.5" fill="none"/>
+  
+  <ellipse cx="160" cy="105" rx="5" ry="3" fill="#228B22" transform="rotate(-20 160 105)"/>
+  <ellipse cx="160" cy="105" rx="4" ry="2" fill="#32CD32" transform="rotate(-20 160 105)"/>
+  <path d="M160 105 Q163 103 166 105" stroke="#006400" stroke-width="0.5" fill="none"/>
+  
+  <ellipse cx="155" cy="90" rx="4" ry="2" fill="#228B22" transform="rotate(45 155 90)"/>
+  <ellipse cx="155" cy="90" rx="3" ry="1.5" fill="#32CD32" transform="rotate(45 155 90)"/>
+  
+  <!-- Realistic cheese strings/pulls -->
+  <path d="M125 85 Q140 88 155 85 Q170 88 185 85" stroke="#FFF8DC" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M130 105 Q145 108 160 105 Q175 108 190 105" stroke="#FFF8DC" stroke-width="2" fill="none" opacity="0.7"/>
+  <path d="M135 95 Q150 98 165 95" stroke="#FFF8DC" stroke-width="1.5" fill="none" opacity="0.6"/>
+  
+  <!-- Tomato sauce texture -->
+  <circle cx="145" cy="95" r="2" fill="#DC143C" opacity="0.6"/>
+  <circle cx="155" cy="100" r="1.5" fill="#DC143C" opacity="0.6"/>
+  <circle cx="140" cy="105" r="1" fill="#DC143C" opacity="0.6"/>
+  
+  <!-- Olive oil drops for authenticity -->
+  <circle cx="125" cy="90" r="1" fill="#FFD700" opacity="0.8"/>
+  <circle cx="175" cy="95" r="1" fill="#FFD700" opacity="0.8"/>
+  
+  <!-- Steam rising -->
+  <path d="M120 70 Q122 65 120 60 Q118 55 120 50" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M150 70 Q152 65 150 60 Q148 55 150 50" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.4"/>
+  <path d="M180 70 Q182 65 180 60 Q178 55 180 50" stroke="#FFFFFF" stroke-width="1" fill="none" opacity="0.4"/>
+  
+  <!-- Restaurant ambiance lighting -->
+  <circle cx="50" cy="40" r="30" fill="url(#crustGrad)" opacity="0.1"/>
+  <circle cx="250" cy="30" r="25" fill="url(#crustGrad)" opacity="0.1"/>
+</svg>

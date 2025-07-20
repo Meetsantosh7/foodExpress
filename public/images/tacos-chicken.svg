@@ -1,0 +1,150 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="shellGradient" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#F5E6A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="chickenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CD853F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lettuceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#689F38;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="tomatoGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D32F2F;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="cheeseGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFE135;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC649;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="onionGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#F8BBD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="plateGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F8F8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0E0E0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="6" dy="10" stdDeviation="5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="crispTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.03" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0.2 0.3 0.4"/>
+      </feComponentTransfer>
+      <feComposite operator="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Wooden table surface -->
+  <ellipse cx="200" cy="280" rx="180" ry="15" fill="#8D6E63" opacity="0.2"/>
+  
+  <!-- Serving plate -->
+  <ellipse cx="200" cy="260" rx="160" ry="20" fill="url(#plateGradient)" filter="url(#shadow)"/>
+  <ellipse cx="200" cy="255" rx="155" ry="18" fill="#FFF" opacity="0.8"/>
+  
+  <!-- Tacos arrangement -->
+  <g filter="url(#shadow)">
+    <!-- Taco 1 -->
+    <g transform="translate(120,200)">
+      <!-- Taco shell -->
+      <path d="M -40 20 Q 0 -30 40 20 Q 35 40 30 45 Q 0 50 -30 45 Q -35 40 -40 20 Z" fill="url(#shellGradient)" filter="url(#crispTexture)"/>
+      <path d="M -35 20 Q 0 -25 35 20 Q 30 35 25 40 Q 0 45 -25 40 Q -30 35 -35 20 Z" fill="#F5E6A3" opacity="0.6"/>
+      
+      <!-- Fillings -->
+      <!-- Lettuce -->
+      <path d="M -30 15 Q -15 5 0 10 Q 15 5 30 15 Q 25 25 10 20 Q 0 30 -10 20 Q -25 25 -30 15 Z" fill="url(#lettuceGradient)"/>
+      
+      <!-- Chicken pieces -->
+      <ellipse cx="-15" cy="18" rx="8" ry="5" fill="url(#chickenGradient)" transform="rotate(15)"/>
+      <ellipse cx="0" cy="15" rx="10" ry="6" fill="url(#chickenGradient)" transform="rotate(-10)"/>
+      <ellipse cx="15" cy="20" rx="7" ry="4" fill="url(#chickenGradient)" transform="rotate(20)"/>
+      
+      <!-- Tomato pieces -->
+      <circle cx="-10" cy="25" r="3" fill="url(#tomatoGradient)"/>
+      <circle cx="12" cy="28" r="2.5" fill="url(#tomatoGradient)"/>
+      
+      <!-- Cheese -->
+      <path d="M -20 25 Q 0 20 20 25 Q 15 35 0 30 Q -15 35 -20 25 Z" fill="url(#cheeseGradient)" opacity="0.8"/>
+      
+      <!-- Red onion -->
+      <ellipse cx="-5" cy="30" rx="4" ry="2" fill="url(#onionGradient)"/>
+      <ellipse cx="8" cy="32" rx="3" ry="1.5" fill="url(#onionGradient)"/>
+      
+      <!-- Shell texture lines -->
+      <path d="M -30 20 Q 0 -20 30 20" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.8"/>
+      <path d="M -25 25 Q 0 10 25 25" stroke="#D4AF37" stroke-width="0.8" fill="none" opacity="0.6"/>
+    </g>
+    
+    <!-- Taco 2 (center, slightly forward) -->
+    <g transform="translate(200,210)">
+      <path d="M -40 20 Q 0 -30 40 20 Q 35 40 30 45 Q 0 50 -30 45 Q -35 40 -40 20 Z" fill="url(#shellGradient)" filter="url(#crispTexture)"/>
+      <path d="M -35 20 Q 0 -25 35 20 Q 30 35 25 40 Q 0 45 -25 40 Q -30 35 -35 20 Z" fill="#F5E6A3" opacity="0.6"/>
+      
+      <path d="M -30 15 Q -15 5 0 10 Q 15 5 30 15 Q 25 25 10 20 Q 0 30 -10 20 Q -25 25 -30 15 Z" fill="url(#lettuceGradient)"/>
+      
+      <ellipse cx="-12" cy="20" rx="9" ry="6" fill="url(#chickenGradient)" transform="rotate(10)"/>
+      <ellipse cx="5" cy="18" rx="8" ry="5" fill="url(#chickenGradient)" transform="rotate(-15)"/>
+      <ellipse cx="18" cy="22" rx="6" ry="4" fill="url(#chickenGradient)" transform="rotate(25)"/>
+      
+      <circle cx="-8" cy="28" r="3.5" fill="url(#tomatoGradient)"/>
+      <circle cx="15" cy="30" r="2" fill="url(#tomatoGradient)"/>
+      
+      <path d="M -22 28 Q 0 23 22 28 Q 18 38 0 33 Q -18 38 -22 28 Z" fill="url(#cheeseGradient)" opacity="0.8"/>
+      
+      <ellipse cx="-3" cy="33" rx="5" ry="2.5" fill="url(#onionGradient)"/>
+      <ellipse cx="10" cy="35" rx="3" ry="1.5" fill="url(#onionGradient)"/>
+      
+      <path d="M -30 20 Q 0 -20 30 20" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.8"/>
+      <path d="M -25 25 Q 0 10 25 25" stroke="#D4AF37" stroke-width="0.8" fill="none" opacity="0.6"/>
+    </g>
+    
+    <!-- Taco 3 -->
+    <g transform="translate(280,200)">
+      <path d="M -40 20 Q 0 -30 40 20 Q 35 40 30 45 Q 0 50 -30 45 Q -35 40 -40 20 Z" fill="url(#shellGradient)" filter="url(#crispTexture)"/>
+      <path d="M -35 20 Q 0 -25 35 20 Q 30 35 25 40 Q 0 45 -25 40 Q -30 35 -35 20 Z" fill="#F5E6A3" opacity="0.6"/>
+      
+      <path d="M -30 15 Q -15 5 0 10 Q 15 5 30 15 Q 25 25 10 20 Q 0 30 -10 20 Q -25 25 -30 15 Z" fill="url(#lettuceGradient)"/>
+      
+      <ellipse cx="-10" cy="19" rx="7" ry="5" fill="url(#chickenGradient)" transform="rotate(12)"/>
+      <ellipse cx="8" cy="17" rx="9" ry="6" fill="url(#chickenGradient)" transform="rotate(-8)"/>
+      <ellipse cx="20" cy="21" rx="6" ry="4" fill="url(#chickenGradient)" transform="rotate(18)"/>
+      
+      <circle cx="-12" cy="26" r="2.5" fill="url(#tomatoGradient)"/>
+      <circle cx="10" cy="29" r="3" fill="url(#tomatoGradient)"/>
+      
+      <path d="M -18 26 Q 0 21 18 26 Q 14 36 0 31 Q -14 36 -18 26 Z" fill="url(#cheeseGradient)" opacity="0.8"/>
+      
+      <ellipse cx="-2" cy="31" rx="4" ry="2" fill="url(#onionGradient)"/>
+      <ellipse cx="12" cy="33" rx="2.5" ry="1.5" fill="url(#onionGradient)"/>
+      
+      <path d="M -30 20 Q 0 -20 30 20" stroke="#D4AF37" stroke-width="1" fill="none" opacity="0.8"/>
+      <path d="M -25 25 Q 0 10 25 25" stroke="#D4AF37" stroke-width="0.8" fill="none" opacity="0.6"/>
+    </g>
+  </g>
+  
+  <!-- Garnish -->
+  <!-- Lime wedge -->
+  <g transform="translate(80,240)">
+    <path d="M 0 0 L 15 8 Q 8 15 0 12 Z" fill="#8BC34A"/>
+    <path d="M 0 0 L 15 8 Q 8 15 0 12 Z" fill="#4CAF50" opacity="0.8"/>
+    <path d="M 2 3 L 12 8 Q 8 12 2 10 Z" fill="#FFF" opacity="0.3"/>
+  </g>
+  
+  <!-- Hot sauce drops -->
+  <circle cx="150" cy="250" r="1.5" fill="#D32F2F"/>
+  <circle cx="250" cy="245" r="1" fill="#D32F2F"/>
+  <circle cx="320" cy="250" r="1.2" fill="#D32F2F"/>
+  
+  <!-- Steam effect -->
+  <g opacity="0.4">
+    <path d="M 120 150 Q 125 140 120 130 Q 115 120 120 110" stroke="#FFF" stroke-width="1.5" fill="none"/>
+    <path d="M 200 140 Q 205 130 200 120 Q 195 110 200 100" stroke="#FFF" stroke-width="2" fill="none"/>
+    <path d="M 280 150 Q 285 140 280 130 Q 275 120 280 110" stroke="#FFF" stroke-width="1.5" fill="none"/>
+  </g>
+</svg>

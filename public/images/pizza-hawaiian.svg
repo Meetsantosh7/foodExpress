@@ -1,0 +1,127 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic pizza gradients -->
+    <radialGradient id="crustGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#F5E6A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B886;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="cheeseGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FFF8DC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="hamGrad" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#FFB6C1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DDA0DD;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  
+  <!-- Wood table background -->
+  <rect width="300" height="200" fill="#8B4513"/>
+  
+  <!-- Pizza base/crust -->
+  <circle cx="150" cy="100" r="85" fill="url(#crustGrad)" filter="url(#shadow)"/>
+  <circle cx="150" cy="100" r="75" fill="#F5E6A3"/>
+  
+  <!-- Crust edge texture -->
+  <circle cx="150" cy="100" r="85" fill="none" stroke="#D4B886" stroke-width="8"/>
+  <circle cx="150" cy="100" r="77" fill="none" stroke="#E6D3A3" stroke-width="2"/>
+  
+  <!-- Tomato sauce base -->
+  <circle cx="150" cy="100" r="70" fill="#DC143C" opacity="0.8"/>
+  <circle cx="150" cy="100" r="68" fill="#FF6347" opacity="0.6"/>
+  
+  <!-- Melted mozzarella cheese -->
+  <circle cx="150" cy="100" r="65" fill="url(#cheeseGrad)" opacity="0.9"/>
+  <circle cx="150" cy="100" r="62" fill="#FFFACD" opacity="0.8"/>
+  
+  <!-- Cheese stretch effects -->
+  <ellipse cx="130" cy="80" rx="15" ry="8" fill="#FFFACD" opacity="0.9"/>
+  <ellipse cx="170" cy="90" rx="12" ry="6" fill="#FFFACD" opacity="0.9"/>
+  <ellipse cx="140" cy="120" rx="18" ry="10" fill="#FFFACD" opacity="0.9"/>
+  <ellipse cx="160" cy="110" rx="14" ry="7" fill="#FFFACD" opacity="0.9"/>
+  
+  <!-- Ham slices -->
+  <ellipse cx="130" cy="85" rx="12" ry="8" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  <ellipse cx="170" cy="95" rx="14" ry="10" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  <ellipse cx="140" cy="115" rx="13" ry="9" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  <ellipse cx="165" cy="120" rx="11" ry="7" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  <ellipse cx="155" cy="75" rx="10" ry="6" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  <ellipse cx="120" cy="105" rx="12" ry="8" fill="url(#hamGrad)" filter="url(#shadow)"/>
+  
+  <!-- Ham texture lines -->
+  <g opacity="0.6">
+    <path d="M125 85 Q130 83 135 85" stroke="#CD5C5C" stroke-width="0.5" fill="none"/>
+    <path d="M165 95 Q170 93 175 95" stroke="#CD5C5C" stroke-width="0.5" fill="none"/>
+    <path d="M135 115 Q140 113 145 115" stroke="#CD5C5C" stroke-width="0.5" fill="none"/>
+    <path d="M160 120 Q165 118 170 120" stroke="#CD5C5C" stroke-width="0.5" fill="none"/>
+  </g>
+  
+  <!-- Pineapple chunks -->
+  <ellipse cx="145" cy="90" rx="8" ry="6" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="175" cy="110" rx="7" ry="5" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="125" cy="110" rx="9" ry="7" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="160" cy="85" rx="6" ry="4" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="135" cy="125" rx="8" ry="6" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="170" cy="125" rx="7" ry="5" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="110" cy="95" rx="6" ry="4" fill="#FFD700" filter="url(#shadow)"/>
+  <ellipse cx="180" cy="100" rx="8" ry="6" fill="#FFD700" filter="url(#shadow)"/>
+  
+  <!-- Pineapple texture details -->
+  <g opacity="0.7">
+    <circle cx="145" cy="88" r="1" fill="#FFA500"/>
+    <circle cx="175" cy="108" r="0.8" fill="#FFA500"/>
+    <circle cx="125" cy="108" r="1.2" fill="#FFA500"/>
+    <circle cx="160" cy="83" r="0.6" fill="#FFA500"/>
+    <circle cx="135" cy="123" r="1" fill="#FFA500"/>
+    <circle cx="170" cy="123" r="0.8" fill="#FFA500"/>
+    <circle cx="110" cy="93" r="0.6" fill="#FFA500"/>
+    <circle cx="180" cy="98" r="1" fill="#FFA500"/>
+  </g>
+  
+  <!-- Pineapple cross-hatch pattern -->
+  <g opacity="0.5">
+    <path d="M141 90 L149 90 M145 86 L145 94" stroke="#DAA520" stroke-width="0.3"/>
+    <path d="M171 110 L179 110 M175 106 L175 114" stroke="#DAA520" stroke-width="0.3"/>
+    <path d="M121 110 L129 110 M125 106 L125 114" stroke="#DAA520" stroke-width="0.3"/>
+    <path d="M156 85 L164 85 M160 81 L160 89" stroke="#DAA520" stroke-width="0.3"/>
+  </g>
+  
+  <!-- Extra melted cheese on top -->
+  <ellipse cx="150" cy="95" rx="20" ry="12" fill="#FFFACD" opacity="0.6"/>
+  <ellipse cx="140" cy="105" rx="15" ry="8" fill="#FFFACD" opacity="0.6"/>
+  <ellipse cx="165" cy="105" rx="18" ry="10" fill="#FFFACD" opacity="0.6"/>
+  
+  <!-- Cheese browning spots -->
+  <circle cx="135" cy="75" r="3" fill="#DEB887" opacity="0.7"/>
+  <circle cx="170" cy="80" r="2.5" fill="#DEB887" opacity="0.7"/>
+  <circle cx="145" cy="125" r="4" fill="#DEB887" opacity="0.7"/>
+  <circle cx="175" cy="115" r="3.5" fill="#DEB887" opacity="0.7"/>
+  <circle cx="115" cy="100" r="2" fill="#DEB887" opacity="0.7"/>
+  <circle cx="185" cy="105" r="3" fill="#DEB887" opacity="0.7"/>
+  
+  <!-- Steam effects -->
+  <g opacity="0.4">
+    <path d="M130 60 Q135 50 130 40" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+    <path d="M150 55 Q155 45 150 35" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+    <path d="M170 60 Q175 50 170 40" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Scattered flour on table -->
+  <g opacity="0.3">
+    <circle cx="50" cy="180" r="2" fill="#F5F5F5"/>
+    <circle cx="80" cy="170" r="1.5" fill="#F5F5F5"/>
+    <circle cx="250" cy="175" r="2.5" fill="#F5F5F5"/>
+    <circle cx="220" cy="165" r="1.8" fill="#F5F5F5"/>
+    <circle cx="270" cy="185" r="1.2" fill="#F5F5F5"/>
+  </g>
+  
+  <!-- Wood grain texture -->
+  <g opacity="0.2">
+    <rect x="0" y="150" width="300" height="2" fill="#654321"/>
+    <rect x="0" y="170" width="300" height="3" fill="#654321"/>
+    <rect x="0" y="190" width="300" height="2" fill="#654321"/>
+  </g>
+</svg>

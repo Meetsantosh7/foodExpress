@@ -1,0 +1,118 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bowlGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#F5F5F5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BDBDBD;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="brothGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DEB887;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CD853F;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tofuGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFEF7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F5DC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="scallionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8BC34A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#689F38;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="seaweedGradient" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2E7D32;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="6" dy="10" stdDeviation="5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="steamEffect" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.02" numOctaves="1" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0.2 0.3 0.4"/>
+      </feComponentTransfer>
+      <feComposite operator="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Table surface -->
+  <ellipse cx="200" cy="280" rx="160" ry="15" fill="#8D6E63" opacity="0.2"/>
+  
+  <!-- Bowl with shadow -->
+  <g filter="url(#shadow)">
+    <!-- Bowl exterior -->
+    <ellipse cx="200" cy="220" rx="120" ry="40" fill="url(#bowlGradient)"/>
+    <ellipse cx="200" cy="215" rx="115" ry="35" fill="#E8E8E8"/>
+    
+    <!-- Bowl rim -->
+    <ellipse cx="200" cy="180" rx="115" ry="25" fill="#F5F5F5"/>
+    <ellipse cx="200" cy="178" rx="110" ry="20" fill="#FFF"/>
+    
+    <!-- Miso broth -->
+    <ellipse cx="200" cy="185" rx="105" ry="18" fill="url(#brothGradient)"/>
+    <ellipse cx="200" cy="183" rx="100" ry="15" fill="#D2B48C" opacity="0.8"/>
+    
+    <!-- Floating ingredients -->
+    <!-- Tofu cubes -->
+    <rect x="160" y="175" width="12" height="12" rx="2" fill="url(#tofuGradient)"/>
+    <rect x="165" y="177" width="10" height="10" rx="1" fill="#FFF" opacity="0.6"/>
+    
+    <rect x="220" y="180" width="15" height="10" rx="2" fill="url(#tofuGradient)"/>
+    <rect x="223" y="182" width="12" height="8" rx="1" fill="#FFF" opacity="0.6"/>
+    
+    <rect x="185" y="190" width="10" height="8" rx="1" fill="url(#tofuGradient)"/>
+    <rect x="187" y="191" width="8" height="6" rx="1" fill="#FFF" opacity="0.6"/>
+    
+    <!-- Seaweed pieces -->
+    <path d="M 140 185 Q 155 180 160 190 Q 150 195 145 188 Q 135 190 140 185 Z" fill="url(#seaweedGradient)"/>
+    <path d="M 250 175 Q 265 178 270 185 Q 260 192 255 185 Q 245 188 250 175 Z" fill="url(#seaweedGradient)"/>
+    <path d="M 200 195 Q 210 192 215 200 Q 205 205 200 198 Q 195 200 200 195 Z" fill="url(#seaweedGradient)"/>
+    
+    <!-- Chopped scallions (green onions) -->
+    <ellipse cx="175" cy="185" rx="4" ry="2" fill="url(#scallionGradient)"/>
+    <ellipse cx="180" cy="188" rx="3" ry="1.5" fill="#8BC34A"/>
+    
+    <ellipse cx="230" cy="182" rx="4" ry="2" fill="url(#scallionGradient)"/>
+    <ellipse cx="235" cy="185" rx="3" ry="1.5" fill="#8BC34A"/>
+    
+    <ellipse cx="195" cy="175" rx="3" ry="2" fill="url(#scallionGradient)"/>
+    <ellipse cx="198" cy="177" rx="2" ry="1" fill="#8BC34A"/>
+    
+    <ellipse cx="210" cy="190" rx="4" ry="2" fill="url(#scallionGradient)"/>
+    <ellipse cx="213" cy="192" rx="3" ry="1.5" fill="#8BC34A"/>
+    
+    <ellipse cx="160" cy="195" rx="3" ry="1.5" fill="url(#scallionGradient)"/>
+    <ellipse cx="162" cy="196" rx="2" ry="1" fill="#8BC34A"/>
+    
+    <ellipse cx="240" cy="195" rx="3" ry="2" fill="url(#scallionGradient)"/>
+    <ellipse cx="242" cy="197" rx="2" ry="1" fill="#8BC34A"/>
+    
+    <!-- Additional small ingredients -->
+    <circle cx="190" cy="182" r="2" fill="#DEB887"/>
+    <circle cx="225" cy="188" r="1.5" fill="#DEB887"/>
+    <circle cx="205" cy="185" r="1" fill="#DEB887"/>
+    
+    <!-- Broth surface ripples -->
+    <ellipse cx="180" cy="183" rx="15" ry="3" fill="#E6C97A" opacity="0.4"/>
+    <ellipse cx="220" cy="185" rx="12" ry="2" fill="#E6C97A" opacity="0.3"/>
+    <ellipse cx="200" cy="180" rx="20" ry="4" fill="#E6C97A" opacity="0.2"/>
+    
+    <!-- Bowl highlight -->
+    <ellipse cx="160" cy="170" rx="30" ry="8" fill="#FFF" opacity="0.3"/>
+  </g>
+  
+  <!-- Steam rising from hot soup -->
+  <g opacity="0.5" filter="url(#steamEffect)">
+    <path d="M 160 150 Q 165 140 160 130 Q 155 120 160 110 Q 165 100 160 90" stroke="#FFF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 200 145 Q 205 135 200 125 Q 195 115 200 105 Q 205 95 200 85" stroke="#FFF" stroke-width="2.5" fill="none" opacity="0.8"/>
+    <path d="M 240 150 Q 245 140 240 130 Q 235 120 240 110 Q 245 100 240 90" stroke="#FFF" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M 180 155 Q 185 145 180 135 Q 175 125 180 115" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <path d="M 220 155 Q 225 145 220 135 Q 215 125 220 115" stroke="#FFF" stroke-width="1.5" fill="none" opacity="0.4"/>
+  </g>
+  
+  <!-- Chopsticks (optional) -->
+  <g transform="translate(320,180) rotate(25)">
+    <rect x="0" y="0" width="3" height="60" rx="1.5" fill="#8D6E63"/>
+    <rect x="6" y="0" width="3" height="60" rx="1.5" fill="#8D6E63"/>
+    <rect x="0" y="0" width="3" height="60" rx="1.5" fill="#A1887F" opacity="0.6"/>
+    <rect x="6" y="0" width="3" height="60" rx="1.5" fill="#A1887F" opacity="0.6"/>
+  </g>
+</svg>

@@ -1,0 +1,236 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic Indian cuisine gradients -->
+    <radialGradient id="riceGrad" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#FFFEF8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5F5DC;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="curryGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#FF8C00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CC5500;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="naan" cx="50%" cy="30%" r="80%">
+      <stop offset="0%" style="stop-color:#F5E6A3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4B886;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="spiceTexture">
+      <feTurbulence baseFrequency="0.3" numOctaves="4" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+    </filter>
+  </defs>
+  
+  <!-- Traditional Indian restaurant background -->
+  <rect width="300" height="200" fill="#8B4513"/>
+  
+  <!-- Decorated Indian restaurant wall -->
+  <rect x="0" y="0" width="300" height="80" fill="#CD853F"/>
+  <g opacity="0.4">
+    <!-- Mandala pattern elements -->
+    <circle cx="50" cy="25" r="12" fill="#FF6347"/>
+    <circle cx="50" cy="25" r="8" fill="#FFD700"/>
+    <circle cx="50" cy="25" r="4" fill="#FF69B4"/>
+    
+    <circle cx="150" cy="20" r="10" fill="#32CD32"/>
+    <circle cx="150" cy="20" r="6" fill="#FFD700"/>
+    
+    <circle cx="250" cy="25" r="12" fill="#9370DB"/>
+    <circle cx="250" cy="25" r="8" fill="#FFD700"/>
+    <circle cx="250" cy="25" r="4" fill="#FF1493"/>
+    
+    <!-- Traditional paisley patterns -->
+    <path d="M100 40 Q110 35 115 45 Q110 55 100 50 Q95 45 100 40" fill="#FF8C00" opacity="0.6"/>
+    <path d="M200 40 Q210 35 215 45 Q210 55 200 50 Q195 45 200 40" fill="#FF6347" opacity="0.6"/>
+  </g>
+  
+  <!-- Wooden table with brass inlay -->
+  <rect x="0" y="80" width="300" height="120" fill="#654321"/>
+  <g opacity="0.3" filter="url(#spiceTexture)">
+    <rect x="0" y="85" width="300" height="2" fill="#DAA520"/>
+    <rect x="0" y="95" width="300" height="3" fill="#B8860B"/>
+    <rect x="0" y="110" width="300" height="2" fill="#DAA520"/>
+    <rect x="0" y="125" width="300" height="3" fill="#B8860B"/>
+  </g>
+  
+  <!-- Traditional brass serving thali -->
+  <ellipse cx="150" cy="120" rx="100" ry="30" fill="#B8860B" opacity="0.4" filter="url(#shadow)"/>
+  <ellipse cx="150" cy="115" rx="95" ry="25" fill="#DAA520"/>
+  <ellipse cx="150" cy="115" rx="90" ry="22" fill="#FFD700"/>
+  <!-- Brass engravings -->
+  <g opacity="0.6">
+    <circle cx="150" cy="115" r="70" fill="none" stroke="#B8860B" stroke-width="1"/>
+    <circle cx="150" cy="115" r="50" fill="none" stroke="#B8860B" stroke-width="0.5"/>
+    <path d="M120 115 Q135 105 150 115 Q165 105 180 115" stroke="#B8860B" stroke-width="0.5" fill="none"/>
+  </g>
+  
+  <!-- Biryani rice with saffron -->
+  <g transform="translate(150, 100)">
+    <!-- Rice mound -->
+    <ellipse rx="30" ry="18" fill="url(#riceGrad)" filter="url(#shadow)"/>
+    <!-- Saffron strands -->
+    <path d="M-20 -8 Q-15 -10 -10 -8" stroke="#FF8C00" stroke-width="0.8"/>
+    <path d="M5 -10 Q10 -12 15 -10" stroke="#FF8C00" stroke-width="0.8"/>
+    <path d="M-8 -5 Q-3 -7 2 -5" stroke="#FF8C00" stroke-width="0.8"/>
+    <!-- Individual rice grains -->
+    <circle cx="-15" cy="-3" r="0.8" fill="#F5F5DC"/>
+    <circle cx="-8" cy="-8" r="0.8" fill="#F5F5DC"/>
+    <circle cx="5" cy="-6" r="0.8" fill="#F5F5DC"/>
+    <circle cx="12" cy="-3" r="0.8" fill="#F5F5DC"/>
+    <circle cx="-12" cy="5" r="0.8" fill="#F5F5DC"/>
+    <circle cx="0" cy="8" r="0.8" fill="#F5F5DC"/>
+    <circle cx="18" cy="10" r="0.8" fill="#F5F5DC"/>
+    <!-- Fried onions -->
+    <ellipse cx="-10" cy="2" rx="2" ry="1" fill="#8B4513"/>
+    <ellipse cx="8" cy="-2" rx="3" ry="1" fill="#8B4513"/>
+    <ellipse cx="-3" cy="6" rx="2" ry="1" fill="#8B4513"/>
+    <!-- Almonds and raisins -->
+    <ellipse cx="-18" cy="5" rx="1.5" ry="1" fill="#DEB887"/>
+    <ellipse cx="15" cy="3" rx="1.5" ry="1" fill="#DEB887"/>
+    <circle cx="-5" cy="-12" r="1" fill="#8B008B"/> <!-- Raisin -->
+    <circle cx="10" cy="-8" r="1" fill="#8B008B"/> <!-- Raisin -->
+  </g>
+  
+  <!-- Chicken Curry -->
+  <g transform="translate(100, 110)">
+    <ellipse rx="20" ry="15" fill="url(#curryGrad)" filter="url(#shadow)"/>
+    <!-- Chicken pieces -->
+    <ellipse rx="8" ry="6" fill="#DEB887" transform="translate(-8, -3)"/>
+    <ellipse rx="7" ry="5" fill="#DEB887" transform="translate(5, -2)"/>
+    <ellipse rx="6" ry="4" fill="#DEB887" transform="translate(-2, 5)"/>
+    <ellipse rx="7" ry="6" fill="#DEB887" transform="translate(8, 3)"/>
+    <!-- Curry sauce bubbles -->
+    <circle cx="-12" cy="0" r="1.5" fill="#FF6347" opacity="0.8"/>
+    <circle cx="10" cy="-5" r="1.2" fill="#FF6347" opacity="0.8"/>
+    <circle cx="-3" cy="8" r="1" fill="#FF6347" opacity="0.8"/>
+    <!-- Spice oils floating -->
+    <circle cx="-8" cy="-8" r="0.8" fill="#FF8C00" opacity="0.9"/>
+    <circle cx="6" cy="-8" r="0.6" fill="#FF8C00" opacity="0.9"/>
+    <circle cx="12" cy="6" r="0.7" fill="#FF8C00" opacity="0.9"/>
+  </g>
+  
+  <!-- Dal (Lentil curry) -->
+  <g transform="translate(200, 110)">
+    <ellipse rx="18" ry="12" fill="#FFD700" filter="url(#shadow)"/>
+    <ellipse rx="16" ry="10" fill="#FFA500"/>
+    <!-- Lentils -->
+    <circle cx="-8" cy="-3" r="0.8" fill="#FF8C00"/>
+    <circle cx="-3" cy="-5" r="0.8" fill="#FF8C00"/>
+    <circle cx="5" cy="-2" r="0.8" fill="#FF8C00"/>
+    <circle cx="10" cy="-4" r="0.8" fill="#FF8C00"/>
+    <circle cx="-10" cy="3" r="0.8" fill="#FF8C00"/>
+    <circle cx="0" cy="5" r="0.8" fill="#FF8C00"/>
+    <circle cx="8" cy="6" r="0.8" fill="#FF8C00"/>
+    <!-- Tempering (tadka) -->
+    <circle cx="-5" cy="0" r="1" fill="#8B4513"/> <!-- Cumin -->
+    <circle cx="3" cy="2" r="1" fill="#8B4513"/> <!-- Cumin -->
+  </g>
+  
+  <!-- Naan bread -->
+  <g transform="translate(80, 135)">
+    <ellipse rx="22" ry="12" fill="url(#naan)" filter="url(#shadow)"/>
+    <ellipse rx="20" ry="10" fill="#F5E6A3"/>
+    <!-- Naan texture and bubbles -->
+    <circle cx="-8" cy="-3" r="2" fill="#E6D3A3" opacity="0.8"/>
+    <circle cx="6" cy="-5" r="1.5" fill="#E6D3A3" opacity="0.8"/>
+    <circle cx="-12" cy="2" r="1.8" fill="#E6D3A3" opacity="0.8"/>
+    <circle cx="10" cy="4" r="2.2" fill="#E6D3A3" opacity="0.8"/>
+    <!-- Garlic pieces -->
+    <circle cx="-5" cy="0" r="0.8" fill="#F5F5DC"/>
+    <circle cx="2" cy="-3" r="0.6" fill="#F5F5DC"/>
+    <circle cx="8" cy="1" r="0.7" fill="#F5F5DC"/>
+    <!-- Cilantro -->
+    <path d="M-10 -1 L-8 -3 M-6 0 L-4 -2 M4 -1 L6 -3 M8 0 L10 -2" 
+          stroke="#228B22" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Raita (Yogurt) -->
+  <g transform="translate(220, 135)">
+    <ellipse rx="15" ry="10" fill="#FFFFFF" filter="url(#shadow)"/>
+    <ellipse rx="13" ry="8" fill="#F8F8FF"/>
+    <!-- Cucumber pieces -->
+    <circle cx="-5" cy="-2" r="1" fill="#90EE90"/>
+    <circle cx="3" cy="1" r="1" fill="#90EE90"/>
+    <circle cx="-2" cy="3" r="0.8" fill="#90EE90"/>
+    <!-- Mint leaves -->
+    <ellipse cx="5" cy="-3" rx="1.5" ry="0.8" fill="#32CD32"/>
+    <ellipse cx="-8" cy="2" rx="1.2" ry="0.6" fill="#32CD32"/>
+    <!-- Black mustard seeds -->
+    <circle cx="-3" cy="-1" r="0.3" fill="#000000"/>
+    <circle cx="6" cy="2" r="0.3" fill="#000000"/>
+  </g>
+  
+  <!-- Chutneys -->
+  <g transform="translate(120, 140)">
+    <!-- Mint chutney -->
+    <ellipse rx="8" ry="6" fill="#32CD32" filter="url(#shadow)"/>
+    <ellipse rx="6" ry="4" fill="#228B22"/>
+    <!-- Mint texture -->
+    <circle cx="-2" cy="0" r="0.5" fill="#90EE90" opacity="0.8"/>
+    <circle cx="2" cy="1" r="0.4" fill="#90EE90" opacity="0.8"/>
+  </g>
+  
+  <g transform="translate(180, 140)">
+    <!-- Tamarind chutney -->
+    <ellipse rx="8" ry="6" fill="#8B4513" filter="url(#shadow)"/>
+    <ellipse rx="6" ry="4" fill="#A0522D"/>
+    <!-- Sweet and sour texture -->
+    <circle cx="-2" cy="0" r="0.5" fill="#CD853F" opacity="0.8"/>
+    <circle cx="2" cy="1" r="0.4" fill="#CD853F" opacity="0.8"/>
+  </g>
+  
+  <!-- Traditional Indian spoons -->
+  <g transform="translate(50, 95)">
+    <ellipse rx="12" ry="4" fill="#DAA520" filter="url(#shadow)"/>
+    <ellipse rx="10" ry="3" fill="#FFD700"/>
+    <rect x="8" y="-1" width="15" height="2" fill="#DAA520"/>
+  </g>
+  
+  <!-- Brass water glass -->
+  <g transform="translate(250, 90)">
+    <ellipse rx="8" ry="15" fill="#DAA520" filter="url(#shadow)"/>
+    <ellipse rx="6" ry="13" fill="#FFD700"/>
+    <!-- Water -->
+    <ellipse rx="5" ry="8" fill="#87CEEB" transform="translate(0, 3)" opacity="0.8"/>
+    <!-- Brass engravings -->
+    <circle cx="0" cy="-8" r="3" fill="none" stroke="#B8860B" stroke-width="0.5"/>
+    <path d="M-3 -8 Q0 -11 3 -8" stroke="#B8860B" stroke-width="0.3" fill="none"/>
+  </g>
+  
+  <!-- Incense smoke -->
+  <g opacity="0.5">
+    <path d="M30 80 Q35 70 30 60 Q25 50 30 40" stroke="#F5F5F5" stroke-width="1" fill="none"/>
+    <path d="M270 80 Q275 70 270 60 Q265 50 270 40" stroke="#F5F5F5" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- Steam from hot dishes -->
+  <g opacity="0.4">
+    <path d="M90 100 Q95 90 100 100 Q105 90 110 100" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+    <path d="M140 90 Q145 80 150 90 Q155 80 160 90" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+    <path d="M190 100 Q195 90 200 100 Q205 90 210 100" stroke="#F5F5F5" stroke-width="1.5" fill="none"/>
+  </g>
+  
+  <!-- Warm Indian restaurant lighting -->
+  <circle cx="75" cy="25" r="35" fill="#FF8C00" opacity="0.08"/>
+  <circle cx="225" cy="30" r="30" fill="#FFD700" opacity="0.08"/>
+  
+  <!-- Traditional Indian oil lamps (diyas) -->
+  <g opacity="0.7">
+    <ellipse cx="60" cy="160" rx="5" ry="3" fill="#8B4513"/>
+    <ellipse cx="60" cy="159" rx="4" ry="2" fill="#DAA520"/>
+    <path d="M60 157 Q62 155 64 157" stroke="#FF6347" stroke-width="1" fill="none"/> <!-- Flame -->
+    
+    <ellipse cx="240" cy="160" rx="5" ry="3" fill="#8B4513"/>
+    <ellipse cx="240" cy="159" rx="4" ry="2" fill="#DAA520"/>
+    <path d="M240 157 Q242 155 244 157" stroke="#FF6347" stroke-width="1" fill="none"/> <!-- Flame -->
+  </g>
+  
+  <!-- Decorative rangoli pattern -->
+  <g opacity="0.3">
+    <circle cx="150" cy="160" r="8" fill="none" stroke="#FF69B4" stroke-width="1"/>
+    <circle cx="150" cy="160" r="5" fill="none" stroke="#32CD32" stroke-width="1"/>
+    <circle cx="150" cy="160" r="2" fill="#FFD700"/>
+    <path d="M142 160 L158 160 M150 152 L150 168" stroke="#FF6347" stroke-width="0.5"/>
+  </g>
+</svg>

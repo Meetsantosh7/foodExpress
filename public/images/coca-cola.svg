@@ -1,0 +1,170 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Realistic Coca-Cola gradients -->
+    <radialGradient id="bottleGrad" cx="30%" cy="20%" r="80%">
+      <stop offset="0%" style="stop-color:#2F4F2F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1C3A1C;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="colaGrad" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#8B4513;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#654321;stop-opacity:1" />
+    </radialGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="3" dy="5" stdDeviation="6" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="gloss">
+      <feSpecularLighting in="SourceAlpha" result="specOut" lighting-color="white" specularConstant="1.5" specularExponent="20">
+        <fePointLight x="120" y="40" z="100"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+  </defs>
+  
+  <!-- Restaurant table background -->
+  <rect width="300" height="200" fill="#654321"/>
+  
+  <!-- Table wood grain -->
+  <g opacity="0.3">
+    <rect x="0" y="150" width="300" height="2" fill="#8B4513"/>
+    <rect x="0" y="170" width="300" height="3" fill="#8B4513"/>
+    <rect x="0" y="190" width="300" height="2" fill="#8B4513"/>
+  </g>
+  
+  <!-- Bottle shadow on table -->
+  <ellipse cx="155" cy="170" rx="25" ry="8" fill="#000000" opacity="0.3"/>
+  
+  <!-- Main Coca-Cola bottle -->
+  <g transform="translate(150, 100)">
+    <!-- Bottle body -->
+    <ellipse rx="20" ry="70" fill="url(#bottleGrad)" filter="url(#shadow)"/>
+    <ellipse rx="18" ry="68" fill="#228B22"/>
+    
+    <!-- Bottle neck -->
+    <rect x="-8" y="-70" width="16" height="20" fill="url(#bottleGrad)"/>
+    <rect x="-7" y="-69" width="14" height="18" fill="#228B22"/>
+    
+    <!-- Bottle cap -->
+    <ellipse rx="10" ry="5" fill="#DC143C" transform="translate(0, -75)"/>
+    <ellipse rx="8" ry="4" fill="#FF6347" transform="translate(0, -76)"/>
+    
+    <!-- Cap ridges -->
+    <g transform="translate(0, -75)" opacity="0.7">
+      <rect x="-8" y="-2" width="16" height="1" fill="#8B0000"/>
+      <rect x="-8" y="0" width="16" height="1" fill="#8B0000"/>
+      <rect x="-8" y="2" width="16" height="1" fill="#8B0000"/>
+    </g>
+    
+    <!-- Coca-Cola inside bottle -->
+    <ellipse rx="16" ry="60" fill="url(#colaGrad)" transform="translate(0, 5)"/>
+    <ellipse rx="14" ry="58" fill="#A0522D" transform="translate(0, 5)"/>
+    
+    <!-- Carbonation bubbles -->
+    <g opacity="0.8">
+      <circle cx="-8" cy="-30" r="1" fill="#F5F5F5"/>
+      <circle cx="6" cy="-20" r="0.8" fill="#F5F5F5"/>
+      <circle cx="-4" cy="-10" r="1.2" fill="#F5F5F5"/>
+      <circle cx="8" cy="0" r="0.6" fill="#F5F5F5"/>
+      <circle cx="-10" cy="10" r="1" fill="#F5F5F5"/>
+      <circle cx="4" cy="20" r="0.8" fill="#F5F5F5"/>
+      <circle cx="-6" cy="30" r="1.2" fill="#F5F5F5"/>
+      <circle cx="10" cy="40" r="0.6" fill="#F5F5F5"/>
+      <circle cx="-8" cy="50" r="1" fill="#F5F5F5"/>
+      <circle cx="5" cy="60" r="0.8" fill="#F5F5F5"/>
+    </g>
+    
+    <!-- Bottle highlight/reflection -->
+    <ellipse rx="4" ry="50" fill="#FFFFFF" opacity="0.4" transform="translate(-12, -10)"/>
+    <ellipse rx="2" ry="30" fill="#FFFFFF" opacity="0.6" transform="translate(-13, -20)"/>
+    
+    <!-- Classic Coca-Cola label -->
+    <rect x="-15" y="-20" width="30" height="40" fill="#DC143C" rx="3"/>
+    <rect x="-14" y="-19" width="28" height="38" fill="#FF0000" rx="2"/>
+    
+    <!-- Coca-Cola text simulation -->
+    <ellipse cx="0" cy="-5" rx="12" ry="4" fill="#FFFFFF"/>
+    <ellipse cx="0" cy="0" rx="11" ry="3" fill="#FFFFFF"/>
+    <ellipse cx="0" cy="5" rx="10" ry="3" fill="#FFFFFF"/>
+    <ellipse cx="0" cy="10" rx="9" ry="2.5" fill="#FFFFFF"/>
+    
+    <!-- Classic Coca-Cola script styling -->
+    <path d="M-10 -5 Q-5 -8 0 -5 Q5 -8 10 -5" stroke="#FFFFFF" stroke-width="1.5" fill="none"/>
+    <path d="M-8 0 Q-3 -2 2 0 Q7 -2 8 0" stroke="#FFFFFF" stroke-width="1.2" fill="none"/>
+    <path d="M-7 5 Q-2 3 3 5 Q6 3 7 5" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    
+    <!-- Bottle contour lines -->
+    <ellipse rx="20" ry="70" fill="none" stroke="#006400" stroke-width="1" opacity="0.6"/>
+    <ellipse rx="18" ry="68" fill="none" stroke="#32CD32" stroke-width="0.5" opacity="0.4"/>
+  </g>
+  
+  <!-- Glass with ice -->
+  <g transform="translate(80, 130)">
+    <!-- Glass -->
+    <rect x="-12" y="-25" width="24" height="35" fill="#F0F8FF" opacity="0.9" filter="url(#shadow)"/>
+    <rect x="-11" y="-24" width="22" height="33" fill="#F8F8FF" opacity="0.8"/>
+    
+    <!-- Coca-Cola in glass -->
+    <rect x="-10" y="-15" width="20" height="25" fill="url(#colaGrad)"/>
+    <rect x="-9" y="-14" width="18" height="23" fill="#A0522D"/>
+    
+    <!-- Ice cubes -->
+    <rect x="-8" y="-20" width="6" height="6" fill="#F0F8FF" opacity="0.9" rx="1"/>
+    <rect x="2" y="-18" width="5" height="5" fill="#F0F8FF" opacity="0.9" rx="1"/>
+    <rect x="-5" y="-10" width="4" height="4" fill="#F0F8FF" opacity="0.9" rx="1"/>
+    <rect x="4" y="-8" width="5" height="5" fill="#F0F8FF" opacity="0.9" rx="1"/>
+    
+    <!-- Bubbles in drink -->
+    <g opacity="0.7">
+      <circle cx="-6" cy="-12" r="0.8" fill="#F5F5F5"/>
+      <circle cx="4" cy="-15" r="0.6" fill="#F5F5F5"/>
+      <circle cx="-2" cy="-8" r="1" fill="#F5F5F5"/>
+      <circle cx="6" cy="-5" r="0.8" fill="#F5F5F5"/>
+      <circle cx="-7" cy="-2" r="0.6" fill="#F5F5F5"/>
+      <circle cx="3" cy="2" r="0.8" fill="#F5F5F5"/>
+    </g>
+    
+    <!-- Glass rim -->
+    <ellipse cy="-25" rx="12" ry="3" fill="#F0F8FF" opacity="0.9"/>
+    <ellipse cy="-25" rx="11" ry="2" fill="#F8F8FF" opacity="0.8"/>
+    
+    <!-- Glass highlight -->
+    <rect x="-11" y="-24" width="3" height="30" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+  
+  <!-- Straw -->
+  <g transform="translate(80, 110)">
+    <rect x="8" y="-20" width="2" height="40" fill="#FF69B4"/>
+    <rect x="8" y="-19" width="2" height="38" fill="#FFB6C1"/>
+    
+    <!-- Straw stripes -->
+    <rect x="8" y="-15" width="2" height="2" fill="#FF1493"/>
+    <rect x="8" y="-10" width="2" height="2" fill="#FF1493"/>
+    <rect x="8" y="-5" width="2" height="2" fill="#FF1493"/>
+    <rect x="8" y="0" width="2" height="2" fill="#FF1493"/>
+    <rect x="8" y="5" width="2" height="2" fill="#FF1493"/>
+    <rect x="8" y="10" width="2" height="2" fill="#FF1493"/>
+    
+    <!-- Straw bend -->
+    <path d="M10 -20 Q12 -22 14 -20" stroke="#FF69B4" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Condensation droplets on bottle -->
+  <g transform="translate(150, 100)" opacity="0.6">
+    <ellipse cx="-15" cy="-20" rx="1" ry="3" fill="#87CEEB"/>
+    <ellipse cx="-10" cy="0" rx="0.8" ry="2.5" fill="#87CEEB"/>
+    <ellipse cx="12" cy="-30" rx="1.2" ry="3.5" fill="#87CEEB"/>
+    <ellipse cx="15" cy="10" rx="0.6" ry="2" fill="#87CEEB"/>
+    <ellipse cx="-8" cy="30" rx="1" ry="2.8" fill="#87CEEB"/>
+    <ellipse cx="8" cy="45" rx="0.8" ry="2.2" fill="#87CEEB"/>
+  </g>
+  
+  <!-- Logo reflection on table -->
+  <g transform="translate(220, 140)" opacity="0.3">
+    <rect x="-8" y="-5" width="16" height="10" fill="#DC143C" rx="2"/>
+    <ellipse cx="0" cy="0" rx="6" ry="2" fill="#FFFFFF"/>
+  </g>
+  
+  <!-- Ambient lighting -->
+  <circle cx="100" cy="50" r="40" fill="#FFD700" opacity="0.05"/>
+  <circle cx="200" cy="60" r="35" fill="#FF6347" opacity="0.05"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="plateGrad" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f0f0;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Plate -->
+  <ellipse cx="40" cy="55" rx="30" ry="18" fill="url(#plateGrad)" stroke="#ddd" stroke-width="2"/>
+  
+  <!-- Pasta -->
+  <path d="M15 45 Q25 40 35 45 Q45 50 55 45 Q65 40 75 45" stroke="#ffd700" stroke-width="3" fill="none"/>
+  <path d="M15 48 Q25 43 35 48 Q45 53 55 48 Q65 43 75 48" stroke="#ffd700" stroke-width="3" fill="none"/>
+  <path d="M15 51 Q25 46 35 51 Q45 56 55 51 Q65 46 75 51" stroke="#ffd700" stroke-width="3" fill="none"/>
+  <path d="M15 54 Q25 49 35 54 Q45 59 55 54 Q65 49 75 54" stroke="#ffd700" stroke-width="3" fill="none"/>
+  
+  <!-- Tomato Sauce -->
+  <ellipse cx="30" cy="50" rx="4" ry="3" fill="#dc143c"/>
+  <ellipse cx="50" cy="48" rx="4" ry="3" fill="#dc143c"/>
+  <ellipse cx="40" cy="52" rx="3" ry="2" fill="#dc143c"/>
+  
+  <!-- Basil Leaves -->
+  <ellipse cx="35" cy="45" rx="2" ry="1" fill="#228b22"/>
+  <ellipse cx="55" cy="52" rx="2" ry="1" fill="#228b22"/>
+  <ellipse cx="25" cy="52" rx="2" ry="1" fill="#228b22"/>
+  
+  <!-- Parmesan -->
+  <rect x="45" y="46" width="2" height="1" fill="#fff8dc"/>
+  <rect x="32" y="53" width="2" height="1" fill="#fff8dc"/>
+  <rect x="58" y="49" width="2" height="1" fill="#fff8dc"/>
+  
+  <!-- Fork -->
+  <rect x="65" y="30" width="1" height="20" fill="#c0c0c0"/>
+  <rect x="63" y="30" width="1" height="3" fill="#c0c0c0"/>
+  <rect x="65" y="30" width="1" height="3" fill="#c0c0c0"/>
+  <rect x="67" y="30" width="1" height="3" fill="#c0c0c0"/>
+  <rect x="69" y="30" width="1" height="3" fill="#c0c0c0"/>
+</svg>

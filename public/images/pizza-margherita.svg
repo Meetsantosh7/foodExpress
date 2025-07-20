@@ -1,0 +1,39 @@
+<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="pizzaGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="200" fill="#F5F5F5"/>
+  
+  <!-- Pizza Base -->
+  <circle cx="150" cy="100" r="70" fill="url(#pizzaGrad)" stroke="#D4AF37" stroke-width="3"/>
+  
+  <!-- Tomato Sauce -->
+  <circle cx="150" cy="100" r="65" fill="#FF6347" opacity="0.7"/>
+  
+  <!-- Mozzarella -->
+  <circle cx="130" cy="85" r="8" fill="#FFF8DC"/>
+  <circle cx="170" cy="85" r="8" fill="#FFF8DC"/>
+  <circle cx="150" cy="115" r="8" fill="#FFF8DC"/>
+  <circle cx="135" cy="115" r="6" fill="#FFF8DC"/>
+  <circle cx="165" cy="115" r="6" fill="#FFF8DC"/>
+  <circle cx="150" cy="75" r="6" fill="#FFF8DC"/>
+  <circle cx="125" cy="100" r="7" fill="#FFF8DC"/>
+  <circle cx="175" cy="100" r="7" fill="#FFF8DC"/>
+  
+  <!-- Basil Leaves -->
+  <ellipse cx="140" cy="90" rx="4" ry="2" fill="#228B22"/>
+  <ellipse cx="160" cy="110" rx="4" ry="2" fill="#228B22"/>
+  <ellipse cx="155" cy="85" rx="3" ry="2" fill="#228B22"/>
+  <ellipse cx="135" cy="105" rx="3" ry="2" fill="#228B22"/>
+  <ellipse cx="150" cy="95" rx="4" ry="2" fill="#228B22"/>
+  
+  <!-- Cheese Strings -->
+  <path d="M120 80 Q150 85 180 80" stroke="#FFF8DC" stroke-width="3" fill="none"/>
+  <path d="M125 105 Q155 110 185 105" stroke="#FFF8DC" stroke-width="3" fill="none"/>
+  <path d="M130 120 Q150 125 170 120" stroke="#FFF8DC" stroke-width="3" fill="none"/>
+</svg>

@@ -1,0 +1,96 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="friesGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="containerGradient" cx="50%" cy="80%" r="60%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D32F2F;stop-opacity:1" />
+    </radialGradient>
+    <linearGradient id="saltGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F0F0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="6" dy="10" stdDeviation="5" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="crispyTexture" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence baseFrequency="0.05" numOctaves="2" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="0.3 0.4 0.5 0.6"/>
+      </feComponentTransfer>
+      <feComposite operator="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  
+  <!-- Background surface -->
+  <ellipse cx="200" cy="280" rx="150" ry="15" fill="#E0E0E0" opacity="0.5"/>
+  
+  <!-- French fries container -->
+  <g filter="url(#shadow)">
+    <!-- Container base -->
+    <path d="M 120 180 L 280 180 L 260 270 L 140 270 Z" fill="url(#containerGradient)"/>
+    <path d="M 120 180 L 280 180 L 275 185 L 125 185 Z" fill="#FF8A80"/>
+    
+    <!-- Container lip -->
+    <ellipse cx="200" cy="180" rx="80" ry="8" fill="#FF5252"/>
+    <ellipse cx="200" cy="177" rx="80" ry="6" fill="#FF7043"/>
+    
+    <!-- Individual french fries -->
+    <!-- Back row fries (darker, partially hidden) -->
+    <rect x="140" y="90" width="8" height="90" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="155" y="85" width="8" height="95" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="170" y="80" width="8" height="100" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="185" y="75" width="8" height="105" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="200" y="70" width="8" height="110" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="215" y="75" width="8" height="105" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="230" y="80" width="8" height="100" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="245" y="85" width="8" height="95" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    <rect x="260" y="90" width="8" height="90" rx="4" fill="#E68900" filter="url(#crispyTexture)" opacity="0.8"/>
+    
+    <!-- Front row fries (brighter, fully visible) -->
+    <rect x="145" y="95" width="9" height="85" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="160" y="85" width="9" height="95" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="175" y="80" width="9" height="100" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="190" y="75" width="9" height="105" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="205" y="70" width="9" height="110" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="220" y="75" width="9" height="105" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="235" y="85" width="9" height="95" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    <rect x="250" y="90" width="9" height="90" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)"/>
+    
+    <!-- A few protruding fries for realism -->
+    <rect x="125" y="110" width="7" height="70" rx="3" fill="url(#friesGradient)" filter="url(#crispyTexture)" transform="rotate(-15 128 145)"/>
+    <rect x="265" y="105" width="7" height="75" rx="3" fill="url(#friesGradient)" filter="url(#crispyTexture)" transform="rotate(12 268 142)"/>
+    <rect x="195" y="65" width="8" height="115" rx="4" fill="url(#friesGradient)" filter="url(#crispyTexture)" transform="rotate(-5 199 122)"/>
+    
+    <!-- Highlights on fries -->
+    <rect x="165" y="85" width="3" height="95" rx="1" fill="#FFF" opacity="0.4"/>
+    <rect x="180" y="80" width="3" height="100" rx="1" fill="#FFF" opacity="0.4"/>
+    <rect x="210" y="70" width="3" height="110" rx="1" fill="#FFF" opacity="0.4"/>
+    <rect x="225" y="75" width="3" height="105" rx="1" fill="#FFF" opacity="0.4"/>
+    <rect x="240" y="85" width="3" height="95" rx="1" fill="#FFF" opacity="0.4"/>
+    
+    <!-- Salt crystals -->
+    <circle cx="170" cy="130" r="1.5" fill="url(#saltGradient)"/>
+    <circle cx="185" cy="125" r="1" fill="url(#saltGradient)"/>
+    <circle cx="200" cy="135" r="1.5" fill="url(#saltGradient)"/>
+    <circle cx="215" cy="128" r="1" fill="url(#saltGradient)"/>
+    <circle cx="230" cy="140" r="1.5" fill="url(#saltGradient)"/>
+    <circle cx="160" cy="145" r="1" fill="url(#saltGradient)"/>
+    <circle cx="245" cy="132" r="1" fill="url(#saltGradient)"/>
+    <circle cx="195" cy="120" r="1" fill="url(#saltGradient)"/>
+    <circle cx="220" cy="145" r="1.5" fill="url(#saltGradient)"/>
+    <circle cx="175" cy="155" r="1" fill="url(#saltGradient)"/>
+    
+    <!-- Steam/heat waves -->
+    <g opacity="0.3">
+      <path d="M 165 60 Q 170 50 165 40 Q 160 30 165 20" stroke="#FFF" stroke-width="1.5" fill="none"/>
+      <path d="M 190 55 Q 195 45 190 35 Q 185 25 190 15" stroke="#FFF" stroke-width="1.5" fill="none"/>
+      <path d="M 215 60 Q 220 50 215 40 Q 210 30 215 20" stroke="#FFF" stroke-width="1.5" fill="none"/>
+      <path d="M 240 65 Q 245 55 240 45 Q 235 35 240 25" stroke="#FFF" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>
